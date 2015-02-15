@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :composers, only: [:index, :new]
+  resources :composers, only: [:index, :new, :create, :edit]
 
 end
