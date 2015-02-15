@@ -1,1 +1,10 @@
-COMPOSERS!
+<% @composers.each do |composer| %>
+  Name: <%= composer.name %>
+  <br>
+  Birth year: <%= composer.birth_year %>
+  <br>
+  Death year: <%= composer.death_year %>
+  <br>
+  Era: <%= composer.era %>
+  <hr>
+<% end %>
