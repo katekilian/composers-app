@@ -16,6 +16,11 @@ class ComposersController < ApplicationController
       render :new
     end
   end
+  # 
+  # def edit
+  #   @composer = Composer.find(params[:id])
+  # end
+
 
   private
 
