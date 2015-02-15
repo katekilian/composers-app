@@ -4,5 +4,9 @@ class ComposersController < ApplicationController
     @composers = Composer.all
   end
 
+  def new
+    @composer = Composer.new
+  end
+
 
 end
