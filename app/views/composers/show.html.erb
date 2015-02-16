@@ -5,3 +5,5 @@ Birth year: <%= @composer.birth_year %>
 Death year: <%= @composer.death_year %>
 <br>
 Era: <%= @composer.era %>
+<br>
+<%= link_to "Edit Composer", composer_path %> | <%= link_to "Delete Composer", composer_path, method: "delete" %> | <%= link_to "Back", composers_path %>
