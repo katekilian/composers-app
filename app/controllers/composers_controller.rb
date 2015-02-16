@@ -25,6 +25,15 @@ class ComposersController < ApplicationController
     @composer = Composer.find(params[:id])
   end
 
+  def update
+    @composer = Composer.find(params[:id])
+    if @composer.save(composer_params)
+      redirect_to composer_path
+    else
+      render :edit
+    end
+  end
+
 
 
 
