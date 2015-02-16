@@ -10,6 +10,8 @@
   <%= link_to "View Composer", composer_path(composer) %>
   <br>
   <%= link_to "Edit Composer", edit_composer_path(composer) %>
+  <br>
+  <%= link_to "Delete Composer", composer_path(composer), method: "delete" %>
   <hr>
 <% end %>
 

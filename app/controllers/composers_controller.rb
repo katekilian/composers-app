@@ -34,8 +34,10 @@ class ComposersController < ApplicationController
     end
   end
 
-
-
+  def destroy
+    @composer = Composer.destroy(params[:id])
+    redirect_to composers_path
+  end
 
   private
 
