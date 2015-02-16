@@ -4,6 +4,10 @@ class ComposersController < ApplicationController
     @composers = Composer.all
   end
 
+  def show
+    @composer= Composer.find(params[:id])
+  end
+
   def new
     @composer = Composer.new
   end
@@ -16,10 +20,12 @@ class ComposersController < ApplicationController
       render :new
     end
   end
-  # 
-  # def edit
-  #   @composer = Composer.find(params[:id])
-  # end
+
+  def edit
+    @composer = Composer.find(params[:id])
+  end
+
+
 
 
   private
